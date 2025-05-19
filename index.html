@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FAVICON -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+	<!-- META ATTRIBUTES -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>About Us | ARES Portfolio</title>
+
+	<!-- BS5 SETUP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- CSS SETUP -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<!-- JS SETUP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<style>
+		.curtain {
+			position: absolute;
+			top: 0;
+			margin-top: -75px;
+			width: 900px;
+			z-index: -10;
+		}
+
+		#curtain-left {
+			left: 0;
+		}
+
+		#curtain-right {
+			right: 0;
+			transform: scaleX(-1); /* Flips the curtain horizontally */
+		}
+
+		#c1 {
+			transition: all 0.3s ease;
+		}
+		
+		#c1:hover {
+			transform: scale(1.05);
+		}
+
+		#who {
+			max-width: 900px;
+			background-color: rgb(221, 161, 42);
+			box-shadow: 
+				0 0 5px #FFD700,
+				0 0 10px #FFA500,
+				0 0 15px #FF4500,
+				0 0 20px #FF0000;
+		}
+
+		#four {
+			width: 600px;
+		}
+
+		h1 {
+			font-size: 4rem;
+			font-family: 'Times New Roman';
+			color: rgb(234, 51, 35);
+			text-shadow:
+				0 0 5px #FFD700,
+				0 0 10px #FFA500,
+				0 0 15px #FF4500,
+				0 0 20px #FF0000;
+			letter-spacing: 12.5px !important;
+		}
+
+		#aboutUs {
+			font-size: 1.2rem;
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		#profiles {
+			background-color: #222;
+			border-radius: 16px;
+		}
+
+		.col {
+			background-color: #333;
+			border-radius: 12px;
+			text-align: center;
+			height: 100%;
+		}
+
+		.col-md-3 p {
+			color: white;
+			text-align: center;
+			transition: all 0.3s ease;
+		}
+
+		.col-md-3:hover {
+			transform: scale(1.05);
+		}
+
+		h2 {
+			font-family: 'Times New Roman';
+			font-size: 2.5rem;
+			font-weight: bold;
+			color: white !important;
+			text-shadow:
+				0 0 5px #FFD700,
+				0 0 10px #FFA500,
+				0 0 15px #FF4500,
+				0 0 20px #FF0000;
+		}
+
+		.btn {
+			background-color: #ffd700;
+			font-weight: bold;
+			text-align: center !important;
+			color: #222;
+			transition: all 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #f1c40f;
+			color: #854709;
+			transform: scale(1.15);
+		}
+
+		.img-fluid {
+			max-width: 100%;
+			height: auto;
+			text-align: center;
+			background-color: #222;
+		}
+
+		@media (max-width: 768px) {
+			.curtain {
+				width: 500px;
+			}
+
+			#who {
+				max-width: 400px;
+			}
+
+			#four {
+				width: 300px;
+			}
+
+			#four-text {
+				font-size: 0.75rem;
+			}
+
+			#aboutUs {
+				font-size: 1rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- BACKGROUND IMAGES -->
+	<img src="img/curtain.png" id="curtain-left" class="curtain">
+	<img src="img/curtain.png" id="curtain-right" class="curtain">
+
+	<!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-expand-md mt-5 rounded-5">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="https://www.tacticalstore.se/userfiles/image/Ares%20Logo.png" id="logo" alt="ARES"> 
+			</a>
+
+			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> 
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto"> 
+					<li class="nav-item">
+						<a href="index.html" id="about" class="nav-link home">
+							<img src="img/colosseum-svgrepo-com.svg" class="svg" id="svg-1">
+							<span class="p-1 rounded-pill text-dark tooltip">About Us</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q1</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Aguilar1.html">Arianne Aguilar</a></li>
+							<li><a class="dropdown-item" href="Reever1.html">Reever Casimiro</a></li>
+							<li><a class="dropdown-item" href="Eden1.html">Eaden Bulo</a></li>
+							<li><a class="dropdown-item" href="Stephanie1.html">Stephanie Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q2</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Aguilar2.html">Arianne Aguilar</a></li>
+							<li><a class="dropdown-item" href="Reever2.html">Reever Casimiro</a></li>
+							<li><a class="dropdown-item" href="Eden2.html">Eaden Bulo</a></li>
+							<li><a class="dropdown-item" href="Stephanie2.html">Stephanie Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class=" nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q3</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="ArianneEden.html">Aguilar and Bulo</a></li>
+							<li><a class="dropdown-item" href="StephReever.html">Casimiro and Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q4</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="4thQ.html">The Sigma Group</a></li>
+						</ul>
+					</li>
+
+				<li class="nav-item">
+					<a href="Whatnext.html" id="about" class="nav-link">
+						<img src="img/question-mark-svgrepo-com.svg" class="svg" id="svg-2">
+						<span class="p-1 rounded-pill text-dark tooltip mt-3" id="svg-2-text" style="margin-left: -25px;">What's Next?</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="Rateus.html" id="about" class="nav-link mb-md-0 mb-4">
+						<img src="img/star-svgrepo-com.svg" class="svg" id="svg-3">
+						<span class="p-1 rounded-pill text-dark tooltip mt-3" id="svg-3-text" style="margin-left: -5px;">Rate Us</span>
+					</a>
+				</li>
+			</ul>
+
+			<form class="d-flex" action="index.html">
+				<input class="form-control disabled-link rounded-3 ms-md-3" type="text" placeholder="Search…">
+				<button class="btn btn-warning disabled-link rounded-3 ms-2" type="button">Search</button>
+			</form>
+		</div>
+	</div>
+	</nav>
+
+	<!-- ABOUT US -->
+	<div class="container mt-5" id="c1">
+		<h1 class="text-center text-light fw-bold">ARES</h1>
+		<section class="mx-auto px-5 pb-4 rounded-5" id="who">
+			<img src="img/four.png" id="four" class="d-flex mx-auto rounded-4">
+			<p class="text-center" id="four-text" style="color: rgba(0, 0, 0, 0.3)"><i>A picture of us working on our new project!</i></p>
+			<p id="aboutUs" style="font-weight: 450;">We are an upstart programming company formed by four friends who love ICT. The letters in <b>ARES</b> were formed by the first letter of our first names: Arianne, Reever, Eaden, and Stephanie. Our company's name is also a reference to the mythological Greek god who represents war and courage. Coding takes courage and determination because it is like a war between you and the many possible errors. However, thanks to the combined abilities of each member of this group, we are able to rise above these problems and reign victorious.</p>
+		</section>
+	</div>
+
+	<!-- PROFILES -->
+	<div class="container my-5">
+		<div class="row mx-2 p-2" id="profiles">
+			<div class="col-md-3 col-12 mt-md-0 mt-4">
+				<div class="col">
+					<h2 class="letter text-center">A</h2>
+					<p><b>A</b> is for <b>Arianne Aguilar</b>; Arianne has visions of how the webpage should look and work. By choosing the concepts and the themes, the foundation of our webpage is provided and it gives everyone one clear destination to walk towards.</p>
+					<img src="img/Arianne.jpeg" class="img-fluid p-2 rounded-3 d-flex mx-auto" style="width: 200px; height: 225px; object-fit: cover;" alt="Image for Arianne">
+					<a href="Aguilarwhatsnext.html"><button class="btn rounded-5">Click Me 🤵🏻‍♀️</button></a>
+				</div>
+			</div>
+			<div class="col-md-3 col-12 mt-md-0 mt-4">
+				<div class="col">
+					<h2 class="letter text-center">R</h2>
+					<p><b>R</b> is for <b>Reever Casimiro</b>. Reever is the soul of the group. He works in the background, creating designs that ultimately adds the cherry on top to our website. Our site is prettier thanks to Reever.</p>
+					<img src="img/Reever.png" class="img-fluid p-2 rounded-3 d-flex mx-auto" style="width: 200px; height: 225px;object-fit: cover;" alt="Image for Reever">
+					<a href="Reeverwhatsnext.html"><button class="btn rounded-5">Click Me 🤔</button></a>
+				</div>
+			</div>
+			<div class="col-md-3 col-12 mt-md-0 mt-4">
+				<div class="col">
+					<h2 class="letter text-center">E</h2>
+					<p><b>E</b> is for <b>Eaden Bulo</b>. Eaden has a love-hate relationship with coding. He may crashout because of it, but he is still the most enthusiastic and motivated one in our team. He even codes in his sleep. His drive to finish a webpage speeds up our journey to success!</p>
+					<img src="img/Eaden.jpg" class="img-fluid p-2 rounded-3 d-flex mx-auto" style="width: 200px; height: 225px; object-fit: cover;" alt="Image for Eaden">
+					<a href="Edenwhatsnext.html"><button class="btn rounded-5">Click Me 😎</button></a>
+				</div>	
+			</div>
+			<div class="col-md-3 col-12 mt-md-0 mt-4">
+				<div class="col">
+					<h2 class="letter text-center">S</h2>
+					<p><b>S</b> is for <b>Stephanie Flores</b>; Steph thinks in binary code, and she might even be a cyborg. She is the problem-solver of the team because in every error we encounter, she's the one who has a solution. In every code she adds, our page becomes more magical.</p>
+					<img src="img/Steph.png" class="img-fluid p-2 rounded-3 d-flex mx-auto" style="width: 200px; height: 225px;object-fit: cover;" alt="Image for Stephanie">
+					<a href="Stephaniewhatsnext.html"><button class="btn rounded-5">Click Me 🥷🏻</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
