@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FAVICON -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+	<!-- META ATTRIBUTES -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Arianne & Eaden — 3rd Quarter | ARES Portfolio</title>
+
+	<!-- BS5 SETUP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- CSS SETUP -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<!-- JS SETUP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<style>
+		body {
+			overflow-y: hidden;
+		}
+		.curtain {
+			position: absolute;
+			top: 0;
+			margin-top: -75px;
+			width: 900px;
+			z-index: -10;
+		}
+
+		#curtain-left {
+			left: 0;
+		}
+
+		#curtain-right {
+			right: 0;
+			transform: scaleX(-1); /* Flips the curtain horizontally */
+		}
+
+		#c1 {
+			transition: all 0.3s ease;
+		}
+		
+		#c1:hover {
+			transform: scale(1.05);
+		}
+	</style>
+</head>
+<body>
+	<!-- BACKGROUND IMAGES -->
+	<img src="img/curtain.png" id="curtain-left" class="curtain">
+	<img src="img/curtain.png" id="curtain-right" class="curtain">
+
+	<!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-expand-md mt-5 rounded-5">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="https://www.tacticalstore.se/userfiles/image/Ares%20Logo.png" id="logo" alt="ARES"> 
+			</a>
+
+			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> 
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto"> 
+					<li class="nav-item">
+						<a href="index.html" id="about" class="nav-link">
+							<img src="img/colosseum-svgrepo-com.svg" class="svg" id="svg-1">
+							<span class="p-1 rounded-pill text-dark tooltip">About Us</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q1</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Aguilar1.html">Arianne Aguilar</a></li>
+							<li><a class="dropdown-item" href="Reever1.html">Reever Casimiro</a></li>
+							<li><a class="dropdown-item" href="Eden1.html">Eaden Bulo</a></li>
+							<li><a class="dropdown-item" href="Stephanie1.html">Stephanie Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q2</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Aguilar2.html">Arianne Aguilar</a></li>
+							<li><a class="dropdown-item" href="Reever2.html">Reever Casimiro</a></li>
+							<li><a class="dropdown-item" href="Eden2.html">Eaden Bulo</a></li>
+							<li><a class="dropdown-item" href="Stephanie2.html">Stephanie Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class=" nav-link home navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q3</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="ArianneEden.html">Aguilar and Bulo</a></li>
+							<li><a class="dropdown-item" href="StephReever.html">Casimiro and Flores</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link navbar-nav dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Q4</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="4thQ.html">The Sigma Group</a></li>
+						</ul>
+					</li>
+
+				<li class="nav-item">
+					<a href="Whatnext.html" id="about" class="nav-link">
+						<img src="img/question-mark-svgrepo-com.svg" class="svg" id="svg-2">
+						<span class="p-1 rounded-pill text-dark tooltip mt-3" id="svg-2-text" style="margin-left: -25px;">What's Next?</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="Rateus.html" id="about" class="nav-link mb-md-0 mb-4">
+						<img src="img/star-svgrepo-com.svg" class="svg" id="svg-3">
+						<span class="p-1 rounded-pill text-dark tooltip mt-3" id="svg-3-text" style="margin-left: -5px;">Rate Us</span>
+					</a>
+				</li>
+			</ul>
+
+			<form class="d-flex" action="index.html">
+				<input class="form-control disabled-link rounded-3 ms-md-3" type="text" placeholder="Search…">
+				<button class="btn btn-warning disabled-link rounded-3 ms-2" type="button">Search</button>
+			</form>
+		</div>
+	</div>
+	</nav>
+
+	<!-- PROJECT -->
+	<div class="container mt-3">
+		<iframe src="https://sa-9r-bulo.github.io/Campus_ICT9Section_Q3PROJECT_Bulo_Eaden-First-Student-_Aguilar_Arianne-SecondStudent-/" class="rounded-3" width="100%" height="550"></iframe>
+		<p style="color: white;" class="text-center">You're sure to be going everywhere with <b>Arianne & Eaden's Train Fare Guide</b>! Traveling around Google Maps is just the beginning.</p>
+	</div>
+</body>
+</html>
